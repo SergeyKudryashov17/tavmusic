@@ -14,7 +14,7 @@ export const Header = () => {
                 
             <div className="Header__rightPart">
                 <Navigation />
-                <CartBtn />
+                <CartBtn productCount={1}/>
             </div>
         </div>
     )

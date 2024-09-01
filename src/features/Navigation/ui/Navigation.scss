@@ -1,17 +1,23 @@
 .Navigation {
-    
+    margin-right: 35px;
 }
 
 .Navigation__list {
     display: flex;
     align-items: center;
     padding: 0;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .Navigation__item {
     list-style-type: none;
-    margin: 0 25px;
+    margin: 0 20px;
+}
+.Navigation__item:first-child {
+    margin-left: 0;
+}
+.Navigation__item:last-child {
+    margin-right: 0;
 }
 
 .Navigation__link {

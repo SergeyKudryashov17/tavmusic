@@ -1,12 +1,16 @@
+import BigSlider from "@/features/BigSlider";
 import Container from "@/shared/ukit/Container";
 import Header from "@/widgets/Header";
 
 const MainPage = () => {
     return (
-        <Container>
-            <Header />
-            Главная страница
-        </Container>
+        <>
+            <Container>
+                <Header />
+            </Container>
+
+            <BigSlider />
+        </>
     );
 }
 

@@ -1,0 +1,17 @@
+.Header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+} 
+
+.Header__letfPart {
+    display: flex;
+    align-items: center;
+}
+
+.Header__seporator {
+    width: 1px;
+    height: 80%;
+    background-color: var(--light-gray-color3);
+}

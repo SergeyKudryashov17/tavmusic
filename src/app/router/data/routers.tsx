@@ -1,7 +1,10 @@
 import AboutPage from "@/pages/AboutPage";
 import ArticlePage from "@/pages/ArticlePage";
+import BlogPage from "@/pages/BlogPage";
 import CartPage from "@/pages/CartPage";
 import CategoriesPage from "@/pages/CategoriesPage";
+import ContatsPage from "@/pages/ContatsPage";
+import DeliveryPage from "@/pages/DeliveryPage";
 import MainPage from "@/pages/MainPage";
 import OrderTrackingPage from "@/pages/OrderTrackingPage";
 import OrderCompletionPage from "@/pages/OrderСompletionPage";
@@ -48,7 +51,7 @@ export const routers: RouteObject[] = [
     },
     {
         id: 'About',
-        path: '/product',
+        path: '/about',
         element: <AboutPage />
     },
     {
@@ -60,5 +63,20 @@ export const routers: RouteObject[] = [
         id: 'Article',
         path: '/article',
         element: <ArticlePage />
+    },
+    {
+        id: 'Blog',
+        path: '/blog',
+        element: <BlogPage />
+    },
+    {
+        id: 'Delivery',
+        path: '/delivery',
+        element: <DeliveryPage />
+    },
+    {
+        id: 'Contacts',
+        path: '/contacts',
+        element: <ContatsPage />
     }
 ]; 

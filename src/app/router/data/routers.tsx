@@ -25,8 +25,8 @@ export const routers: RouteObject[] = [
         element: <CartPage />
     },
     {
-        id: 'Categories',
-        path: '/categories',
+        id: 'Category',
+        path: '/category',
         element: <CategoriesPage />
     },
     {

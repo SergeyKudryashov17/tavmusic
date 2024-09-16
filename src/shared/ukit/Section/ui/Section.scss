@@ -1,4 +1,8 @@
 .Section {
     padding-top: 100px;
     padding-bottom: 100px;
+
+    &_gray {
+        background-color: var(--light-gray-color4);
+    }
 }

@@ -1,4 +1,5 @@
 export type SlickSliderPropsType = {
     settings: any,
-    children: any
+    className?: string,
+    children: JSX.Element | JSX.Element[]
 }

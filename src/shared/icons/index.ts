@@ -6,6 +6,8 @@ import { PackageIcon } from "./PackageIcon/PackageIcon";
 import { HandshakeIcon } from "./HandshakeIcon/HandshakeIcon";
 import { ThumbsUpIcon } from "./ThumbsUpIcon/ThumbsUpIcon";
 import { PaletteIcon } from "./PaletteIcon/PaletteIcon";
+import { PrevArrowIcon } from "./PrevArrowIcon/PrevArrowIcon";
+import { NextArrowIcon } from "./NextArrowIcon/NextArrowIcon";
 
 export {
     MailIcon,
@@ -15,6 +17,8 @@ export {
     HandshakeIcon,
     ThumbsUpIcon,
     PaletteIcon,
+    PrevArrowIcon,
+    NextArrowIcon,
     
     type iconType
 }

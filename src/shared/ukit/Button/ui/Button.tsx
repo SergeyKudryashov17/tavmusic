@@ -7,7 +7,7 @@ export const Button = ({
     isPrimary = true, 
     isFullView = false, 
     isCenter = false,
-    size = ButtonSize.M, 
+    size = ButtonSize.XS, 
     className 
 }: ButtonPropsType) => {
     const fullClass = isFullView ? 'Button_full' : '';

@@ -1,0 +1,24 @@
+import SlickSlider from "@/shared/ukit/SlickSlider";
+import { ProductSliderPropsType } from "../types/ProductSliderPropsType";
+import { IProduct } from "@/entities/Product";
+import ProductCard from "@/features/ProductCard";
+import './ProductsSlider.scss';
+import NextArrowBtn from "./NextArrowBtn";
+import PrevArrowBtn from "./PrevArrowBtn";
+
+export const ProductsSlider = ({ productList }: ProductSliderPropsType) => {
+    const settings = {
+        dots: false,
+        infinite: false,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        nextArrow: <NextArrowBtn />,
+        prevArrow: <PrevArrowBtn />
+    }
+
+    return (
+        <SlickSlider className="ProductsSlider" settings={settings}>
+            { productList.map((product: IProduct) => <ProductCard {...product} /> )}
+        </SlickSlider>
+    );
+}

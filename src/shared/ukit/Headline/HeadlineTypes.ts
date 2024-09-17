@@ -1,6 +1,9 @@
+import { CSSProperties } from "react"
+
 export type HeadlinePropsType = {
     children: string | JSX.Element,
-    view: HeadlineViews
+    view: HeadlineViews,
+    style?: CSSProperties
 }
 
 export enum HeadlineViews {

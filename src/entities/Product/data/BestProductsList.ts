@@ -1,5 +1,4 @@
 import { IProduct } from "../types/IProduct";
-
 import img from '@/shared/assets/img/761876.518x0@2x.jpg';
 
 export const bestProductList: IProduct[] = [

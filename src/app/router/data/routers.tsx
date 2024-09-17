@@ -1,6 +1,7 @@
 import AboutPage from "@/pages/AboutPage";
 import ArticlePage from "@/pages/ArticlePage";
 import BlogPage from "@/pages/BlogPage";
+import BrandPage from "@/pages/BrandPage";
 import CartPage from "@/pages/CartPage";
 import CategoriesPage from "@/pages/CategoriesPage";
 import ContatsPage from "@/pages/ContatsPage";
@@ -78,5 +79,10 @@ export const routers: RouteObject[] = [
         id: 'Contacts',
         path: '/contacts',
         element: <ContatsPage />
+    },
+    {
+        id: 'Brand',
+        path: '/brand',
+        element: <BrandPage />
     }
 ]; 

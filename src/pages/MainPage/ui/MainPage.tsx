@@ -6,8 +6,14 @@ import Headline, { HeadlineViews } from "@/shared/ukit/Headline";
 import Section, { SectionViews } from "@/shared/ukit/Section";
 import GridCategories from "@/widgets/GridCategories";
 import Header from "@/widgets/Header";
+import BrandSlider from "@/features/BrandSlider";
+import ArticleList from "@/features/ArticleList";
 
 import { bestProductList } from '@/entities/Product/data/BestProductsList';
+import { stockMoscow } from "@/entities/Product/data/stockMoscow";
+import { brandList } from "@/entities/Brand";
+import { articleList } from "@/entities/Article";
+import { ArticleListView } from "@/features/ArticleList/ArticleListPropsType";
 
 const MainPage = () => {
     return (
@@ -42,6 +48,37 @@ const MainPage = () => {
                         Лучшие предложения
                     </Headline>
                     <ProductSlider productList={bestProductList} />
+                </Container>
+            </Section>
+
+            <Section view={SectionViews.Gray}>
+                <Container>
+                    <Headline view={HeadlineViews.Section} style={{ marginBottom: '5px' }}>
+                        В наличии в Москве
+                    </Headline>
+                    <ProductSlider productList={stockMoscow} />
+                </Container>
+            </Section>
+
+            <Section>
+                <Container>
+                    <Headline view={HeadlineViews.Section} style={{ marginBottom: '5px' }}>
+                        Бренды
+                    </Headline>
+                    <BrandSlider brandList={brandList} />
+                </Container>
+            </Section>
+
+            <Section view={SectionViews.Gray}>
+                <Container>
+                    <Headline view={HeadlineViews.Section}>
+                        Блог
+                    </Headline>
+                    <ArticleList 
+                        visibleCount={3} 
+                        list={articleList} 
+                        view={ArticleListView.Column}
+                    />
                 </Container>
             </Section>
         </>

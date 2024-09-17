@@ -1,12 +1,12 @@
 import { NextArrowIcon } from "@/shared/icons";
-import { arrowPropsType } from "../../types/arrowPropsType";
+import { arrowPropsType } from "../arrowPropsType";
+import '../ArrowBtn.scss';
 
 export const NextArrowBtn = (props: arrowPropsType) => {
     const { style, onClick } = props;
-    const styleObj = style ?? null;
     return (
         <div
-            className="ProductsSlider__arrow ProductsSlider__arrow_next"
+            className="ArrowBtn ArrowBtn_next"
             style={{ ...style }}
             onClick={onClick}
         >

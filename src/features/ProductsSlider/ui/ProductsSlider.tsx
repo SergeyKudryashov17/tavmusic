@@ -3,8 +3,7 @@ import { ProductSliderPropsType } from "../types/ProductSliderPropsType";
 import { IProduct } from "@/entities/Product";
 import ProductCard from "@/features/ProductCard";
 import './ProductsSlider.scss';
-import NextArrowBtn from "./NextArrowBtn";
-import PrevArrowBtn from "./PrevArrowBtn";
+import { NextArrowBtn, PrevArrowBtn } from "@/shared/ukit/ArrowBtns";
 
 export const ProductsSlider = ({ productList }: ProductSliderPropsType) => {
     const settings = {

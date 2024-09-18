@@ -8,12 +8,13 @@ import GridCategories from "@/widgets/GridCategories";
 import Header from "@/widgets/Header";
 import BrandSlider from "@/features/BrandSlider";
 import ArticleList from "@/features/ArticleList";
+import { ArticleListView } from "@/features/ArticleList";
+import Footer from "@/widgets/Footer";
 
 import { bestProductList } from '@/entities/Product/data/BestProductsList';
 import { stockMoscow } from "@/entities/Product/data/stockMoscow";
 import { brandList } from "@/entities/Brand";
 import { articleList } from "@/entities/Article";
-import { ArticleListView } from "@/features/ArticleList/ArticleListPropsType";
 
 const MainPage = () => {
     return (
@@ -81,6 +82,8 @@ const MainPage = () => {
                     />
                 </Container>
             </Section>
+
+            <Footer />
         </>
     );
 }

@@ -19,9 +19,7 @@ import { articleList } from "@/entities/Article";
 const MainPage = () => {
     return (
         <>
-            <Container>
-                <Header />
-            </Container>
+            <Header />
 
             <BigSlider />
 

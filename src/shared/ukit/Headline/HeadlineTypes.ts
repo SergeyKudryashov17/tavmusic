@@ -8,5 +8,7 @@ export type HeadlinePropsType = {
 
 export enum HeadlineViews {
     Page = 'page',
-    Section = 'section'
+    Section = 'section',
+    H5 = 'h5',
+    H6 = 'h6'
 }

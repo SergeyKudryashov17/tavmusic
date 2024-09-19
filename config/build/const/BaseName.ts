@@ -1,5 +1,5 @@
 export enum BaseName {
-    Prod = '/',
+    Prod = '/tavmusic/',
     Dev = '/',
     Test = '/',
 }

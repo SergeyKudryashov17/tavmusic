@@ -8,6 +8,9 @@ import { ThumbsUpIcon } from "./ThumbsUpIcon/ThumbsUpIcon";
 import { PaletteIcon } from "./PaletteIcon/PaletteIcon";
 import { PrevArrowIcon } from "./PrevArrowIcon/PrevArrowIcon";
 import { NextArrowIcon } from "./NextArrowIcon/NextArrowIcon";
+import { MinusIcon } from "./MinusIcon/MinusIcon";
+import { PlusIcon } from "./PlusIcon/PlusIcon";
+import { CartFillIcon } from "./CartIcon/CartFillIcon";
 
 export {
     MailIcon,
@@ -19,6 +22,9 @@ export {
     PaletteIcon,
     PrevArrowIcon,
     NextArrowIcon,
+    MinusIcon,
+    PlusIcon,
+    CartFillIcon,
     
     type iconType
 }

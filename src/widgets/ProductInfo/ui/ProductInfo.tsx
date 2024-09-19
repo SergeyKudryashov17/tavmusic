@@ -14,6 +14,12 @@ export const ProductInfo = ({ productID }: ProductInfoPropsType) => {
     const formatCost = productData?.cost 
                             ? new Intl.NumberFormat("ru-RU").format(productData.cost) 
                             : '-';
+    const shortDesc = productData?.description 
+                        ? productData?.description.length > 130
+                            ? productData?.description.slice(0, 130) + '...' 
+                            : productData?.description
+                        : '';
+    
 
     const items: TabsProps['items'] = [
         {
@@ -75,7 +81,7 @@ export const ProductInfo = ({ productID }: ProductInfoPropsType) => {
                         { formatCost } ₽
                     </div>
                     <div className="ProductInfo__description">
-                        { productData?.description }
+                        { shortDesc }
                     </div>
                     <Counter className="ProductInfo__counter" count={1} />
                     <div className="ProductInfo__controls">

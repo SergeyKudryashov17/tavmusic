@@ -2,7 +2,6 @@ import Container from "@/shared/ukit/Container";
 import Logo from "@/shared/ukit/Logo";
 import './Footer.scss';
 import Headline, { HeadlineViews } from "@/shared/ukit/Headline";
-import { CategoriesList } from "@/features/CategoriesList/ui/CategoriesList";
 import { submenuList } from "../data/submenuList";
 import Menu from "@/shared/ukit/Menu";
 import { categoriesList, ICategory } from "@/entities/Category";

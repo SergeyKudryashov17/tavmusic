@@ -37,7 +37,6 @@ export const productList: IProduct[] = [
         image: img,
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sollicitudin arcu nec arcu eleifend, vitae.'
     },
-    ,
     {
         id: 5,
         name: 'Warwick Alien Deluxe 6 NT',

@@ -53,7 +53,7 @@ export const buildLoaders = (options: BuildProps): webpack.RuleSetRule[] => {
         ],
     }
     const imageLoader = {
-        test: /\.(png|jpe?g|gif)$/,
+        test: /\.(png|jpe?g|gif|jpg)$/,
         exclude: /node_modules/,
         type: "javascript/auto",
         use: [

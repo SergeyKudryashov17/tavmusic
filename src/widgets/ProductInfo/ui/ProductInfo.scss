@@ -1,0 +1,61 @@
+.ProductInfo {
+
+    &__main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 32px;
+    }
+
+    &__gallery {
+        
+    }
+
+    &__data {
+
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 32px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    &__cost {
+        font-weight: 600;
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    &__description {
+        font-weight: 300;
+    }
+
+    &__counter {
+        margin: 25px 0 32px;
+    }
+
+    &__controls {
+
+    }
+
+    &__btnToCart {
+        width: 180px;
+        font-weight: 600;
+        padding: 12px 20px;
+        border-radius: 30px;
+        font-size: 16px;
+
+        &:hover path {
+            fill: var(--accent-color);
+        }
+    }
+
+    &__tabs {
+        margin-top: 40px;
+    }
+
+    &__tabContent {
+        font-size: var(--font-size-base);
+    }
+}
